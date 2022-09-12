@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login</title>
+    <link rel="stylesheet" href="mainfile.css">
+    <link rel="stylesheet" href="mainfile.js">
+    <!-- <script src="mainfile.js" ></script> -->
+</head>
+<body>
+    <div class="contener">
+        <form name="form" id="form">
+            <label for="username">Username</label>
+            <input id="username"  name="username" type="text">
+            <br><br>
+            <label for="password">Password</label>
+            <input id="password"  name="password" type="password">
+            <br><br>
+            <input type="button" value="login" onclick="javascript:myfucntion()"/>
+            <button type="reset">Reset</button>
+            <br><br>
+            <input type="checkbox" name="checkbox" id="checkbox">
+            <label for="checkbox">Remind me</label>
+            <br><br>
+            <a onclick="window.open('forgetPassword.html')" href="">Forget Password</a><br><br>
+            <a onclick="window.open('Registration.html')" href="">Registration</a>
+        </form>
+    </div>
+
+    <script type="text/javascript" >
+        function myfucntion(){
+            if(document.getElementById("username").value=="alawa" && document.getElementById("password").value=="admin"){
+                alert("login Succesfully");
+                window.location="Home.html";
+                                                                                              
+            }
+            else{
+                alert("😭😢incurrect password and username!😢😭")
+            }
+        }
+        function forgetpsw(){
+            window.location="forgetPassword.html";
+        }
+    </script> 
+    
+</body>
+</html>
